@@ -1,8 +1,10 @@
-$navBgColor: #1a2639;
+$navBgColor: rgb(26, 38, 57);
 $navTextColor: #fff;
 $hamburgerIconColor: #fff;
 .nav {
-	position: relative;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 	width: 100%;
 	min-height: 70px;
 	padding: 0 1rem;

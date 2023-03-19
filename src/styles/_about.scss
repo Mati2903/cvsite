@@ -1,0 +1,84 @@
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 3rem;
+	padding: 0 2rem;
+	padding-top: 70px; //height of navbar
+	padding-bottom: 5rem;
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	&__heading {
+		font-size: 4rem;
+		line-height: 6rem;
+		font-weight: bold;
+		width: 100%;
+		text-align: center;
+		@media screen and (min-width: 768px) {
+			text-align: left;
+		}
+	}
+	&__card {
+		box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.2);
+		border-radius: 1rem;
+		padding: 2rem 1rem;
+		min-width: 30%;
+		max-width: 500px;
+		//frozen glass effect
+		background-color: rgba(255, 255, 255, 0.15);
+		backdrop-filter: blur(3px);
+		@media screen and (min-width: 768px) {
+			max-width: 100%;
+			width: 50vw;
+			&:nth-child(2) {
+				margin-right: auto; //push item to the left
+			}
+			&:nth-child(4) {
+				margin-left: auto; //push item to the right
+			}
+		}
+		&-paragraph {
+			font-size: 1.25rem;
+			line-height: 2rem;
+			.work-link {
+				color: #241943;
+				font-weight: bold;
+			}
+			.university-color {
+				color: rgb(216, 39, 29);
+				font-weight: bold;
+			}
+			.faculty-color {
+				color: rgb(242, 190, 0);
+				font-weight: bold;
+			}
+			span {
+				font-weight: bold;
+			}
+			.html-color {
+				color: #f06529;
+			}
+			.css-color {
+				color: #2965f1;
+			}
+			.scss-color {
+				color: #cc6699;
+			}
+			.js-color {
+				color: #f0db4f;
+			}
+			.react-color {
+				color: #61dbfb;
+			}
+			.nextjs-color {
+				color: #000;
+			}
+			.nodejs-color {
+				color: #3c873a;
+			}
+		}
+	}
+}

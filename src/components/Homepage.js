@@ -1,3 +1,6 @@
+import { SlScreenDesktop } from "react-icons/sl";
+import { TbServerBolt } from "react-icons/tb";
+
 const Homepage = () => {
 	return (
 		<section className="homepage">
@@ -9,8 +12,7 @@ const Homepage = () => {
 					<span className="heading__name">Mateusz</span>
 				</h1>
 				<p className="paragraph">
-					I practise web development from over a year, <br /> working mostly
-					in&nbsp;
+					I practise web development from over a year working mostly in{" "}
 					<a className="link next" href="https://nextjs.org/" target="__blank">
 						NEXT.js
 					</a>{" "}
@@ -22,6 +24,14 @@ const Homepage = () => {
 					>
 						React
 					</a>
+					.
+				</p>
+				<p className="paragraph">
+					My goal is to become a fullstack developer. For now I am focusing on
+					frontend technologies.
+					<br />
+					When I will be proficient in frontend, I would like to learn backend
+					as well.
 				</p>
 			</div>
 		</section>

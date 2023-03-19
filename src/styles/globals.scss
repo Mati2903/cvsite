@@ -2,7 +2,12 @@
 @import "./navbar";
 @import "./main";
 @import "./homepage";
+@import "./about";
+@import "./experience";
+@import "./projects";
+@import "./card";
 
+html,
 body {
 	font-family: "Montserrat", sans-serif;
 	background-color: #1c1c1c;
@@ -22,4 +27,24 @@ h5,
 h6 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
+}
+
+section {
+	min-height: calc(100dvh - 70px); //navbar height
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 99.9%;
+		left: 50%;
+		transform: translateX(-50%); //centering
+		width: 75%;
+		height: 1.5px;
+		background-image: linear-gradient(
+			to right,
+			rgba(255, 255, 255, 0),
+			rgba(255, 255, 255, 0.5),
+			rgba(255, 255, 255, 0)
+		);
+	}
 }

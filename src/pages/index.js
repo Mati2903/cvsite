@@ -3,6 +3,9 @@ import Homepage from "../components/Homepage";
 import Head from "next/head";
 import Image from "next/image";
 import Stars from "../components/Stars";
+import About from "../components/About";
+import Experience from "../components/Experience";
+import Projects from "../components/Projects";
 
 export default function Home() {
 	return (
@@ -17,6 +20,9 @@ export default function Home() {
 			<Navbar />
 			<main>
 				<Homepage />
+				<About />
+				<Experience />
+				<Projects />
 			</main>
 		</>
 	);
