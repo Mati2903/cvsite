@@ -28,6 +28,45 @@ export const navLinks = [
 ];
 
 //=============homepage=====================
+//=============experience===================
+export const experience = [
+	{
+		id: 1,
+		title: "Medical devices service engineer",
+		company: "MMC Medical",
+		tasks:
+			"Inspections, diagnosing and repairing electronics failures in medical equipment (X-RAY, USG, patient monitors) and computer devices (mostly laptops)",
+		date: "2020 - present",
+		type: "work",
+	},
+	{
+		id: 2,
+		title: "Electromechanic and motor vehicle diagnostician",
+		company: "Renault Nazaruk Service",
+		tasks:
+			"Diagnosing and repairing electrical failures in vehicles, motor vehicle inspections",
+		date: "2019 - 2020",
+		type: "work",
+	},
+	{
+		id: 3,
+		title: "Master's degree in Electrical Engineering",
+		company: "Lublin University of Technology",
+		tasks:
+			"Studying electrical engineering from generating electricity, through transmitting it, up to electricity receivers and their design, construction and working principles. Also microcontrollers programming classes in C/C++ language",
+		date: "2014 - 2019",
+		type: "education",
+	},
+	{
+		id: 4,
+		title: "Motor vehicle technician",
+		company: "Technical school of motor vehicle engineering",
+		tasks:
+			"Learning about vehicles (with main focus on cars) - construction and working principles, inspections, maintenance and repairs",
+		date: "2010 - 2014",
+		type: "education",
+	},
+];
 //=============projects=====================
 export const projects = [
 	{
@@ -37,56 +76,71 @@ export const projects = [
 		description:
 			"This is my actual CV website with two major fields - electronics and programming",
 		image: "cv.png",
+		ghcode: "https://github.com/Mati2903/my-cv-app",
 	},
 	{
 		id: "mmwebapps",
 		link: "https://mmwebapps.vercel.app/",
 		title: "MM Web Apps",
-		description: "descr",
+		description:
+			"This website includes framer-motion animations and a little bit of backend code to handle sending emails",
 		image: "mmwebapps.png",
+		ghcode: "https://github.com/Mati2903/mmwebapps",
 	},
 	{
 		id: "drony",
 		link: "https://drony-test.vercel.app/",
-		title: "Drones website",
-		description: "descr",
+		title: "FPV drones website",
+		description:
+			"Website created for FPV drones firm. It contains a lot of on-scroll 3D animations",
 		image: "propwash.png",
+		ghcode: "https://github.com/Mati2903/drony-test",
 	},
 	{
 		id: "ubezpieczenia",
 		link: "https://ubezpieczenia.vercel.app/",
 		title: "Insurance website",
-		description: "descr",
+		description:
+			"Website created for insurance agent. Main parts are routing and website map",
 		image: "ubezpieczenia.png",
+		ghcode: "https://github.com/Mati2903/ubezpieczenia",
 	},
 	{
 		id: "parallax",
 		link: "https://parallaxeffect.vercel.app/",
 		title: "Parallax Effect",
-		description: "descr",
+		description:
+			"Simple website for practice parallax effect. All photos were taken by me with my drone and mobile",
 		image: "parallax.png",
+		ghcode: "https://github.com/Mati2903/parallaxeffect",
 	},
 
 	{
 		id: "stars",
 		link: "https://starsproject.vercel.app/",
 		title: "Stars Project",
-		description: "descr",
+		description:
+			"Website with starry background (like on the current page) developed with react-tsparticles package ",
 		image: "stars.png",
+		ghcode: "https://github.com/Mati2903/starsproject",
 	},
 	{
 		id: "propwash",
 		link: "https://propwash.vercel.app/",
-		title: "FPV Drones website",
-		description: "descr",
+		title: "Drones website",
+		description:
+			"Temporary website for FPV drones firm. It contains i18n internationalization feature for choosing language",
 		image: "drony.png",
+		ghcode: "https://github.com/Mati2903/dronefpv",
 	},
 
 	{
 		id: "tiante",
 		link: "https://tiantev2.vercel.app/",
-		title: "Tiante cleaning company",
-		description: "descr",
+		title: "Tiante cleaning firm",
+		description:
+			"Simple cleaning business website with image comparison slider feature",
 		image: "tiante.png",
+		ghcode: "https://github.com/Mati2903/tiante-uslugi-porzadkowe",
 	},
 ];
