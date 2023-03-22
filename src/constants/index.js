@@ -32,6 +32,15 @@ export const navLinks = [
 export const experience = [
 	{
 		id: 1,
+		title: "Web Development",
+		company: "Programming on my own",
+		tasks:
+			"Building custom web applications using technologies like React, Next.js, JavaScript etc.",
+		date: "2021 - present",
+		type: "education",
+	},
+	{
+		id: 2,
 		title: "Medical devices service engineer",
 		company: "MMC Medical",
 		tasks:
@@ -40,7 +49,7 @@ export const experience = [
 		type: "work",
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "Electromechanic and motor vehicle diagnostician",
 		company: "Renault Nazaruk Service",
 		tasks:
@@ -49,7 +58,7 @@ export const experience = [
 		type: "work",
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Master's degree in Electrical Engineering",
 		company: "Lublin University of Technology",
 		tasks:
@@ -58,7 +67,7 @@ export const experience = [
 		type: "education",
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Motor vehicle technician",
 		company: "Technical school of motor vehicle engineering",
 		tasks:
@@ -114,13 +123,12 @@ export const projects = [
 		image: "parallax.png",
 		ghcode: "https://github.com/Mati2903/parallaxeffect",
 	},
-
 	{
 		id: "stars",
 		link: "https://starsproject.vercel.app/",
 		title: "Stars Project",
 		description:
-			"Website with starry background (like on the current page) developed with react-tsparticles package ",
+			"Website with starry background (like on this page)  developed with react-tsparticles package ",
 		image: "stars.png",
 		ghcode: "https://github.com/Mati2903/starsproject",
 	},
@@ -133,7 +141,6 @@ export const projects = [
 		image: "drony.png",
 		ghcode: "https://github.com/Mati2903/dronefpv",
 	},
-
 	{
 		id: "tiante",
 		link: "https://tiantev2.vercel.app/",

@@ -4,25 +4,23 @@ import { BsGithub } from "react-icons/bs";
 
 const Card = ({ id, link, title, description, image, ghcode }) => {
 	return (
-		<Tilt
-			className="tilt-card"
-			glareEnable={true}
-			glareBorderRadius="1rem"
-			glarePosition="all"
-			glareMaxOpacity={0.3}
-			glareColor="#ffffff"
-			perspective={2000}
-			transitionSpeed={1000}
-		>
-			<div
-				className="tilt-card__image"
-				onClick={() => {
-					window.open(link, "__blank");
-				}}
+		<div className="tilt-card">
+			<Tilt
+				glareEnable={true}
+				glareBorderRadius="1rem"
+				glarePosition="bottom"
+				glareMaxOpacity={0.4}
+				glareColor="#ffffff"
+				perspective={1000}
+				transitionSpeed={1000}
+				tiltMaxAngleX={15}
+				tiltMaxAngleY={10}
 			>
-				<div className="banner">Click to see live demo</div>
-				<img src={image} />
-			</div>
+				<a className="tilt-card__image" href={link} target="__blank">
+					<div className="banner">Click to see live demo</div>
+					<img src={image} />
+				</a>
+			</Tilt>
 			<div className="tilt-card__text-container">
 				<h3 className="heading">{title}</h3>
 				<p className="paragraph">{description}</p>
@@ -33,7 +31,7 @@ const Card = ({ id, link, title, description, image, ghcode }) => {
 					<BsGithub />
 				</a>
 			</div>
-		</Tilt>
+		</div>
 	);
 };
 

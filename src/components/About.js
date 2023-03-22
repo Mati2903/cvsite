@@ -1,8 +1,16 @@
+import { motion } from "framer-motion";
+
 const About = () => {
 	return (
 		<section className="about" id="about">
 			<h2 className="about__heading">About Me</h2>
-			<div className="about__card">
+			<motion.div
+				className="about__card"
+				initial={{ opacity: 0, y: 70 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, amount: 0.5 }}
+				transition={{ delay: 0.3 }}
+			>
 				<p className="about__card-paragraph">
 					My name is Mateusz and currently I work as{" "}
 					<a href="https://mmcm.pl/" target="__blank" className="work-link">
@@ -11,8 +19,14 @@ const About = () => {
 					. I do inspections and repairs of medical devices in hospitals. I also
 					repair other electronics devices, especially laptops.
 				</p>
-			</div>
-			<div className="about__card">
+			</motion.div>
+			<motion.div
+				className="about__card"
+				initial={{ opacity: 0, y: 70 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, amount: 0.75 }}
+				transition={{ delay: 0.3 }}
+			>
 				<p className="about__card-paragraph">
 					As for my educaton I studied at{" "}
 					<a
@@ -35,8 +49,14 @@ const About = () => {
 					engineering thesis I developed an on-board car computer which reads
 					engine work parameters from ECU and displays them on the screen.
 				</p>
-			</div>
-			<div className="about__card">
+			</motion.div>
+			<motion.div
+				className="about__card"
+				initial={{ opacity: 0, y: 70 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, amount: 0.75 }}
+				transition={{ delay: 0.3 }}
+			>
 				<p className="about__card-paragraph">
 					Since June 2021 I'm learning web development using
 					<span className="html-color"> HTML</span>,
@@ -50,7 +70,7 @@ const About = () => {
 					developer to improve programming skills working on real-world
 					projects.
 				</p>
-			</div>
+			</motion.div>
 		</section>
 	);
 };

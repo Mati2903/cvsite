@@ -24,8 +24,11 @@
 		.heading {
 			font-size: 2rem;
 			line-height: 4rem;
-			@media screen and (min-width: 340px) {
+			@media screen and (min-width: 350px) {
 				font-size: 3rem;
+			}
+			@media screen and (min-width: 768px) {
+				font-size: 3.5rem;
 			}
 			//gradient font color
 			&__name {
