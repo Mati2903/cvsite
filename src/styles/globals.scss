@@ -6,12 +6,17 @@
 @import "./projects";
 @import "./card";
 @import "./timeline";
+@import "./contact";
+@import "./footer";
 
-html,
+html {
+	scroll-behavior: smooth !important;
+	width: 100%;
+	height: 100%;
+}
 body {
 	font-family: "Montserrat", sans-serif;
 	background-color: #1c1c1c;
-	scroll-behavior: smooth;
 	color: #fff;
 }
 

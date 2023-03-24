@@ -41,6 +41,9 @@
 		.paragraph {
 			font-size: 1.25rem;
 			line-height: 2rem;
+			span {
+				font-size: 1.5rem;
+			}
 
 			@media screen and (min-width: 768px) {
 				max-width: 85%;

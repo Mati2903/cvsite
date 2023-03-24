@@ -27,7 +27,7 @@ const Homepage = () => {
 					.
 				</p>
 				<p className="paragraph">
-					My goal is to become a fullstack developer. For now I am focusing on
+					My goal is to become a fullstack developer <span>&#128187;</span>. For now I am focusing on
 					frontend technologies.
 					<br />
 					When I will be proficient in frontend, I would like to learn backend
