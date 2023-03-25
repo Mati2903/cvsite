@@ -35,7 +35,7 @@ h6 {
 }
 
 section {
-	min-height: calc(100dvh - 70px); //navbar height
+	min-height: 100dvh; //navbar height
 	position: relative;
 	&::after {
 		content: "";
