@@ -8,11 +8,11 @@ import { experience } from "../constants/index";
 
 const Timeline = () => {
 	const rgbColor = "rgb(26, 38, 57)";
-	const contentStyle = {
-		boxShadow: "0px 0px 10px 2px rgba(255, 255, 255, 0.2)",
-		backgroundColor: "rgba(255, 255, 255, 0.15)",
-		backdropFilter: "blur(3px)",
-	};
+	// const contentStyle = {
+	// 	boxShadow: "0px 0px 10px 2px rgba(255, 255, 255, 0.2)",
+	// 	backgroundColor: "rgba(255, 255, 255, 0.15)",
+	// 	backdropFilter: "blur(3px)",
+	// };
 	const contentArrowStyle = {
 		borderRight: `10px solid #fff`,
 	};
@@ -23,7 +23,7 @@ const Timeline = () => {
 				<VerticalTimelineElement
 					key={item.id}
 					className="vertical-timeline-element--work"
-					contentStyle={contentStyle}
+					// contentStyle={contentStyle}
 					contentArrowStyle={contentArrowStyle}
 					date={item.date}
 					iconStyle={iconStyle}
