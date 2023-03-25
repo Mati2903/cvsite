@@ -25,22 +25,24 @@ $hamburgerIconColor: #fff;
 	}
 
 	//------------logo ------------------
-	&__logo {
-		font-family: "Oleo Script Swash Caps", cursive;
-		font-size: 1.4rem;
-		color: $navTextColor;
-		cursor: pointer;
-		position: absolute;
-		left: 1rem;
-		align-self: center;
-		transform: rotate(0);
-		transition: transform 0.4s linear, left 0.4s linear;
+	//@@@@@@@ no logo in this project @@@@@@@
+	// &__logo {
+	// 	font-family: "Oleo Script Swash Caps", cursive;
+	// 	font-size: 1.4rem;
+	// 	color: $navTextColor;
+	// 	cursor: pointer;
+	// 	position: absolute;
+	// 	left: 1rem;
+	// 	align-self: center;
+	// 	transform: rotate(0);
+	// 	transition: transform 0.4s linear, left 0.4s linear;
 
-		&.rotate {
-			transform: rotate(-90deg);
-			left: -1.5rem;
-		}
-	}
+	// 	&.rotate {
+	// 		transform: rotate(-90deg);
+	// 		left: -1.5rem;
+	// 	}
+	// }
+
 	//--------menu list--------
 	.nav-menu {
 		height: 70px;
@@ -82,13 +84,6 @@ $hamburgerIconColor: #fff;
 					transition: width 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
 				}
 				&:hover {
-					color: $navTextColor;
-					&::after {
-						width: 100%;
-					}
-				}
-				//--------underline when link is active
-				&.active {
 					color: $navTextColor;
 					&::after {
 						width: 100%;

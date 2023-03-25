@@ -1,19 +1,16 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { navLinks } from "../constants/index";
 
 const Navbar = () => {
-	const router = useRouter();
+	const [open, setOpen] = useState(false); //hamburger state
 
-	const [open, setOpen] = useState(false); //stan hamburgera
-
-	//funkcja do obsługi klika w menu hamburger zmieniająca stan (a przez to klasę) dla urządzeń mobilnych / dodaje też linię na dole navbara po jego otwarciu
+	//change hamburger state (open/close) after click on one of menu links or on X icon.
+	//for mobile devices with width less than 768px
 	const handleMenuClick = () => {
 		const navbar = document.querySelector(".nav");
 
 		if (window.innerWidth < 768) {
-			console.log(router.asPath);
 			!open ? setOpen(true) : setOpen(false);
 			!open
 				? navbar.classList.add("active")
@@ -21,19 +18,18 @@ const Navbar = () => {
 		}
 	};
 
-	//usuwanie klas w elementach po zrobieniu resize szerokości okna >= 768px - usuwa linię dzielącą menu i obraca logo do pozycji poziomej
+	//handle nav behavior on window resize (eg. change orientation)
 	useEffect(() => {
 		const handleResize = () => {
 			if (window.innerWidth >= 768) {
 				setOpen(false);
-
-				document.querySelector(".nav").classList.remove("active");
 			}
 		};
 		window.addEventListener("resize", handleResize);
+		return window.removeEventListener("resize", handleResize);
 	});
 
-	//usuwanie klas open (zamykanie menu) po kliknięciu na stronie poza navbarem
+	//closing menu after click outside of it
 	useEffect(() => {
 		if (open) {
 			document.querySelector("main").addEventListener("click", () => {
@@ -52,13 +48,7 @@ const Navbar = () => {
 				{/* navLinks comes from constants - simulates db */}
 				{navLinks.map((link) => (
 					<li key={link.id}>
-						<Link
-							href={link.href}
-							//check which element was clicked based on href value and add active class to clicked link
-							className={router.asPath == link.href ? "active" : ""}
-						>
-							{link.title}
-						</Link>
+						<Link href={link.href}>{link.title}</Link>
 					</li>
 				))}
 			</ul>
