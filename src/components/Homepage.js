@@ -8,7 +8,7 @@ const Homepage = () => {
 				<h1 className="heading">
 					Hello &#128075;
 					<br />
-					I'm&nbsp;
+					I&#8242;m&nbsp;
 					<span className="heading__name">Mateusz</span>
 				</h1>
 				<p className="paragraph">
@@ -27,8 +27,8 @@ const Homepage = () => {
 					.
 				</p>
 				<p className="paragraph">
-					My goal is to become a fullstack developer <span>&#128187;</span>. For now I am focusing on
-					frontend technologies.
+					My goal is to become a fullstack developer <span>&#128187;</span>. For
+					now I am focusing on frontend technologies.
 					<br />
 					When I will be proficient in frontend, I would like to learn backend
 					as well.
