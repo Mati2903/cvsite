@@ -44,7 +44,7 @@ export const experience = [
 		title: "Medical devices service engineer",
 		company: "MMC Medical",
 		tasks:
-			"Inspections, diagnosing and repairing electronics failures in medical equipment (X-RAY, USG, patient monitors) and computer devices (mostly laptops)",
+			"Inspections, diagnosing and repairing electronics failures in medical equipment (CT, X-RAY, Ultrasound, patient monitors) and consumer electronics",
 		date: "2020 - present",
 		type: "work",
 	},

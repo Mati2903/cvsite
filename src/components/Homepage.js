@@ -12,7 +12,8 @@ const Homepage = () => {
 					<span className="heading__name">Mateusz</span>
 				</h1>
 				<p className="paragraph">
-					I practise web development from over a year working mostly in{" "}
+					For over two years, I have been practicing web development, primarly
+					focusing on{" "}
 					<a className="link next" href="https://nextjs.org/" target="__blank">
 						NEXT.js
 					</a>{" "}
@@ -27,11 +28,15 @@ const Homepage = () => {
 					.
 				</p>
 				<p className="paragraph">
-					My goal is to become a fullstack developer <span>&#128187;</span>. For
-					now I am focusing on frontend technologies.
+					My goal is to become a full-stack developer <span>&#128187;</span>.
 					<br />
-					When I will be proficient in frontend, I would like to learn backend
-					as well.
+					Currently I am focusing on frontend technologies.
+					<br />
+					Once I become proficient in frontend development, I plan to expand my
+					skills to backend as well.
+					<br />
+					Additionaly, I have a keen interest in embedded/IoT devices, involving
+					both design and programming.
 				</p>
 			</div>
 		</section>

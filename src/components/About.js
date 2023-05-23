@@ -23,6 +23,10 @@ const About = () => {
 					<FaLaptopMedical />. I do inspections and repairs of medical devices
 					in hospitals. I also repair other electronics devices, especially
 					laptops.
+					<br />
+					Additionally I had the opportunity to design a PCB and develop a
+					program for a microcontroller to operate a touchless hand disinfection
+					station.
 				</p>
 			</motion.div>
 			<motion.div
@@ -52,9 +56,9 @@ const About = () => {
 					</a>
 					.<br />
 					During my studies I was learning microcontrollers programming{" "}
-					<BiMicrochip /> . In my engineering thesis I developed an on-board car
-					computer which reads engine work parameters from ECU and displays them
-					on the screen.
+					<BiMicrochip /> .<br />
+					In my engineering thesis I developed an on-board car computer which
+					reads engine work parameters from ECU and displays them on the screen.
 				</p>
 			</motion.div>
 			<motion.div
@@ -66,16 +70,37 @@ const About = () => {
 			>
 				<p className="about__card-paragraph">
 					Since June 2021 I&#8242;m learning web development using
-					<span className="html-color"> HTML</span>,
-					<span className="css-color"> CSS</span>/
-					<span className="scss-color">SCSS</span>,
-					<span className="js-color"> JavaScript</span>,
-					<span className="react-color"> React</span>,
-					<span className="nextjs-color"> Next.js </span>and
-					<span className="nodejs-color"> Node.js</span>. <br />
-					Currently I&#8242;m looking for my first job as a frontend/fullstack
-					developer <FaLaptopCode /> to improve programming skills working on
-					real-world projects.
+					<a href="https://www.w3schools.com/html/" target="__blank">
+						<span className="html-color"> HTML</span>
+					</a>
+					,
+					<a href="https://www.w3schools.com/css/" target="__blank">
+						<span className="css-color"> CSS</span>
+					</a>
+					/
+					<a href="https://sass-lang.com/" target="__blank">
+						<span className="scss-color">SCSS</span>
+					</a>
+					,
+					<a href="https://www.w3schools.com/js/" target="__blank">
+						<span className="js-color"> JavaScript</span>
+					</a>
+					,
+					<a href="https://react.dev/" target="__blank">
+						<span className="react-color"> React</span>
+					</a>
+					,
+					<a href="https://nextjs.org/" tagret="__blank">
+						<span className="nextjs-color"> Next.js </span>
+					</a>
+					and
+					<a href="https://nodejs.org/" target="__blank">
+						<span className="nodejs-color"> Node.js</span>
+					</a>
+					. <br />
+					Currently I&#8242;m seeking my first job as a frontend/fullstack or
+					embedded developer <FaLaptopCode /> to enhance my programming skills
+					by working on real-world projects.
 				</p>
 			</motion.div>
 		</section>
