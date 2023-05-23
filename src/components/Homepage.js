@@ -18,11 +18,7 @@ const Homepage = () => {
 						NEXT.js
 					</a>{" "}
 					and{" "}
-					<a
-						className="link react"
-						href="https://pl.reactjs.org/"
-						target="__blank"
-					>
+					<a className="link react" href="https://react.dev/" target="__blank">
 						React
 					</a>
 					.
