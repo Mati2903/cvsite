@@ -90,7 +90,7 @@ const About = () => {
 						<span className="react-color"> React</span>
 					</a>
 					,
-					<a href="https://nextjs.org/" tagret="__blank">
+					<a href="https://nextjs.org/" target="__blank">
 						<span className="nextjs-color"> Next.js </span>
 					</a>
 					and
